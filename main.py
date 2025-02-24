@@ -12,7 +12,7 @@ teamname = "ARYANS"
 
 
 def mandatory_connections():
-    mandatory_peers = [("10.206.4.201", 1255), ("10.206.5.228", 6555)]
+    mandatory_peers = [("10.206.4.122", 1255), ("10.206.5.228", 6555)]
     for ip, port in mandatory_peers:
         if transmit_message(
             ip, port, "connect", f"<{ip}:{port}> <{teamname}> Mandatory connection"
